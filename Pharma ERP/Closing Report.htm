@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Closing Report</title>
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="./Closing Report_files/ba8f3211bb73f7bcc05f7a3b5b91aef6.png" type="image/x-icon">
+        <link rel="apple-touch-icon" type="image/x-icon" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-144-precomposed.png">
+        <!-- Start Global Mandatory Style-->
+
+       <!-- jquery ui css -->
+        <link href="./Closing Report_files/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap --> 
+        <link href="./Closing Report_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+                <!-- Font Awesome 4.7.0 -->
+        <link href="./Closing Report_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+        <!-- sliderAccess css -->
+        <link href="./Closing Report_files/jquery-ui-timepicker-addon.min.css" rel="stylesheet" type="text/css"> 
+        <link href="./Closing Report_files/wickedpicker.min.css" rel="stylesheet" type="text/css">
+        <!-- slider  -->
+        <link href="./Closing Report_files/select2.min.css" rel="stylesheet" type="text/css"> 
+        <!-- DataTables CSS -->
+        <link href="./Closing Report_files/dataTables.min.css" rel="stylesheet" type="text/css"> 
+          <!-- pe-icon-7-stroke -->
+        <link href="./Closing Report_files/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"> 
+        <!-- themify icon css -->
+        <link href="./Closing Report_files/themify-icons.css" rel="stylesheet" type="text/css"> 
+
+      <link href="./Closing Report_files/component.css" rel="stylesheet" type="text/css">
+        <!-- Pace css -->
+        <link href="./Closing Report_files/toastr.css" rel="stylesheet" type="text/css">
+   
+        <link href="./Closing Report_files/bootstrap-toggle.min.css" rel="stylesheet" type="text/css">
+        <!-- Theme style -->
+        <link href="./Closing Report_files/custom.min.css" rel="stylesheet" type="text/css">
+        <link href="./Closing Report_files/style.css" rel="stylesheet" type="text/css">
+        
+        <link href="./Closing Report_files/sweetalert.css" rel="stylesheet" type="text/css">
+        <!-- summernote css -->
+           <link href="./Closing Report_files/styleBD.min.css" rel="stylesheet" type="text/css">
+       
+                <!-- jQuery -->
+       <script src="./Closing Report_files/jquery-3.4.1.min.js" type="text/javascript"></script>
+       <script src="./Closing Report_files/wickedpicker.min.js" type="text/javascript"></script>
+        <script src="./Closing Report_files/jquery.validate.min.js" type="text/javascript"></script>
+    <style></style><script async="" src="./Closing Report_files/adblocker-chromeglobalinjectjs.js"></script></head>
+    <body class="sidebar-mini  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+            <div class="page-loader-wrapper" style="display: none;">
+            <div class="loader" id="pre-ldr">
+                <div class="preloader">
+                    <div class="spinner-layer pl-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Please wait...</p>
+            </div>
+        </div>
+        <!-- #END# Page Loader -->
+        <div class="se-pre-con"></div>
+
+        <!-- Site wrapper -->
+        <div class="wrapper">
+            <!-- Admin header end -->
+<header class="main-header" id="main-heades">
+    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/" class="logo"> <!-- Logo -->
+        <span class="logo-mini">
+            
+            <img src="./Closing Report_files/ba8f3211bb73f7bcc05f7a3b5b91aef6.png" alt="">
+        </span>
+        <span class="logo-lg">
+            
+            <img src="./Closing Report_files/32fc0c4447cb2f53fa40eba88d014882.png" alt="">
+        </span>
+    </a>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top text-center">
+
+        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <!-- Sidebar toggle button-->
+            <span class="sr-only">Toggle Navigation</span>
+
+            <span class="pe-7s-keypad"></span>
+        </a>
+
+                   <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cinvoice" class="btn btn-success btn-outline"><i class="fa fa-balance-scale"></i> Invoice</a>
+         
+                   <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/customer_receive" class="btn btn-success btn-outline"><i class="fa fa-money"></i> Customer Receive</a>
+        
+                  <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/manufacturer_payment" class="btn btn-success btn-outline"><i class="fa fa-paypal" aria-hidden="true"></i> Manufacturer Payment</a>
+        
+       
+
+                  <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpurchase" class="btn btn-success btn-outline"><i class="ti-shopping-cart"></i> Purchase</a>
+        
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                   <li class="dropdown notifications-menu">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Creport/out_of_date">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-danger">2</span>
+                    </a>
+                </li>
+                <li class="dropdown notifications-menu">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Creport/out_of_stock">
+                        <i class="pe-7s-attention" title="Out Of Stock"></i>
+                        <span class="label label-danger">5</span>
+                    </a>
+                </li>
+                <!-- settings -->
+                <li class="dropdown dropdown-user">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/edit_profile"><i class="pe-7s-users"></i>User Profile</a></li>
+                        <li><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/change_password_form"><i class="pe-7s-settings"></i>Change Password</a></li>
+                        <li><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/logout"><i class="pe-7s-key"></i>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<aside class="main-sidebar">
+    <!-- sidebar -->
+    <div class="sidebar" style="height: auto;">
+        <!-- Sidebar user panel -->
+        <div class="user-panel text-center">
+            <div class="image">
+                <img src="./Closing Report_files/profile.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="info">
+                <p>Admin User</p>
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <!-- sidebar menu -->
+        <ul class="sidebar-menu">
+
+            <li class=" ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/"><i class="ti-dashboard"></i> <span>Dashboard</span>
+                    <span class="pull-right-container">
+                        <span class="label label-success pull-right"></span>
+                    </span>
+                </a>
+            </li>
+
+
+                            <li class="treeview  ">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                        <i class="fa fa-balance-scale"></i><span>Invoice</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cinvoice">New Invoice</a></li>
+                        
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cinvoice/manage_invoice">Manage Invoice </a></li>
+                        
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cinvoice/pos_invoice">POS Invoice</a></li>
+                                                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cinvoice/gui_pos">GUI POS</a></li>
+                                              </ul>
+                </li>
+            
+            <!-- Invoice menu end -->
+
+
+            <!-- Customer menu start -->
+                        <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-handshake-o"></i><span>Customer</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                     <ul class="treeview-menu">
+                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccustomer">Add Customer</a></li>
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccustomer/manage_customer">Manage Customer</a></li>
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccustomer/customer_ledger_report">Customer Ledger</a></li>
+                                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccustomer/credit_customer">Credit Customer</a></li>
+                      
+                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccustomer/paid_customer">Paid Customer</a></li>
+                      
+                                           <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccustomer/customer_advance">Customer Advance</a></li>
+                                      </ul>
+            </li>
+                        <!-- Customer menu end -->
+
+                   <!-- Product menu start -->
+                            <li class="treeview  ">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                        <i class="ti-bag"></i><span>Medicine</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+
+                               <!-- Category menu start -->
+
+           
+                                                  <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Ccategory">Category</a></li>
+                                    
+            <!-- Category menu end -->
+                                                 <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cproduct/typeindex">Medicine Type</a></li>
+                        
+                                         <li class="treeview  ">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                        <i class="fa fa-universal-access"></i><span>Unit</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cproduct/unit_form">Add Unit</a></li>
+
+                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cproduct/unit_list">Unit List</a></li>
+                    </ul>
+                </li>
+            
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cproduct">Add Medicine</a></li>
+                        
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cproduct/add_product_csv">Import Medicine (CSV)</a></li>
+                        
+
+                                                  <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cproduct/manage_product">Manage Medicine</a></li>
+                                            </ul>
+                </li>
+                        <!-- Product menu end -->
+
+            <!-- manufacturer menu start -->
+                            <li class="treeview  ">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                        <i class="ti-user"></i><span>Manufacturer</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                         <ul class="treeview-menu">
+                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer">Add Manufacturer</a></li>
+                                                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/manage_manufacturer">Manage Manufacturer</a></li>
+                                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/manufacturer_ledger_report">Manufacturer Ledger</a></li>
+                                         
+                                <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/manufacturer_advance">Manufacturer Advance</a></li>
+                                  </ul>
+                </li>
+                            <!-- manufacturer menu end -->
+
+
+            <!-- Purchase menu start --> 
+                         <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="ti-shopping-cart"></i><span>Purchase</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpurchase">Add Purchase</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpurchase/manage_purchase">Manage Purchase</a></li>
+                                    </ul>
+             </li>
+                       <!-- Purchase menu end -->
+             <!-- stock menu start -->
+                          <!-- Stock menu start -->
+            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="ti-bar-chart"></i><span>Stock</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Creport">Stock Report</a></li>
+                    
+                
+
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Creport/stock_report_batch_wise">Stock Report(Batch Wise)</a></li>
+                                    </ul>
+            </li>
+                       <!-- Stock menu end -->
+              <!-- start return -->
+                         <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                   <i class="fa fa-retweet" aria-hidden="true"></i><span>Return</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cretrun_m">Return</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cretrun_m/return_list">Stock Return List</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cretrun_m/manufacturer_return_list">Manufacturer  Return List</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cretrun_m/wastage_return_list">Wastage Return List</a></li>
+                    
+                </ul>
+              </li>
+                      
+            <!-- Report menu start -->
+                             <!-- Report menu start -->
+            <li class="treeview active">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="ti-book"></i><span>Report</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing">Closing</a></li>
+                                                        <li class="treeview active"><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report">Closing Report</a></li>
+                                                              <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/all_report">Todays Report</a></li>
+                    
+                                           <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/todays_sales_report">Sales Report</a></li>
+                    
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/todays_purchase_report">Purchase Report</a></li>
+                    
+                                           <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/product_sales_reports_date_wise">Sales Report (Medicine Wise)</a></li>
+                     
+                                        <li class="treeview  ">
+
+                            <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#"><span>profit/Loss</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                            <ul class="treeview-menu">
+                                
+                       <li><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/daily_profit">Invoice Wise Report</a></li>
+                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/profit_manufacturer_form">Manufacturer Wise</a></li>
+                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/profit_productwise_form">Medicine Wise</a></li>
+                            </ul>
+                        </li>
+                               
+                </ul>
+            </li>
+                        <!-- Report menu end -->
+            <!--New Account start-->
+             <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-money"></i><span>Accounts</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/show_tree">Chart Of Account</a></li>
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/manufacturer_payment">Manufacturer Payment</a></li>
+                    
+                                   <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/supplier_payment">Supplier Payment</a></li>
+                          
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/customer_receive">Customer Receive</a></li>
+                                                              <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/cash_adjustment">Cash Adjustment</a></li>
+                                                             <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/debit_voucher">Debit Voucher</a></li>
+                                                                <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/credit_voucher">Credit voucher</a></li>
+                                         
+                                             <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/contra_voucher">Contra Voucher</a></li>
+                                                                   <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/journal_voucher">Journal Voucher</a></li> 
+                                                                  <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/aprove_v">Voucher Approval</a></li> 
+                                                                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report">Report                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                  
+                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/cash_book">Cash Book</a></li>
+                                                                 <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/bank_book">Bank Book</a></li>
+                                                                              <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/general_ledger">General Ledger</a></li>
+                                                           <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/inventory_ledger">Inventory Ledger</a></li>
+                                                                <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/cash_flow_report">Cash Flow</a></li>
+                     
+                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/profit_loss_report">Profit Loss Statement</a></li> 
+             
+                
+                                                   <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/trial_balance">Trial Balance</a></li>
+                                                  
+                   
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/accounts/coa_print">COA Print</a></li>
+                                            </ul>   
+
+            </li>
+                        </ul>
+            </li>
+           <!-- New Account End -->
+<!-- bank menu start -->
+            <!-- Bank menu start -->
+            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#"><i class="ti-briefcase"></i><span>Bank</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                <ul class="treeview-menu">
+
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/index">Add New Bank</a></li>
+                    
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/bank_transaction">Bank Transaction</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/bank_list">Manage Bank</a></li>
+                                                                 <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/bank_ledger">Bank Ledger</a></li>
+                
+                </ul>
+            </li>
+                        <!-- Bank menu end -->
+              <!-- Tax menu start -->
+                                     <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-money"></i><span>Tax</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    
+                <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Caccounts/tax_settings">Tax Settings</a></li>
+                          
+                                 <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Caccounts/add_incometax">Add Income Tax</a></li>
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Caccounts/manage_income_tax">Manage Income tax</a></li>
+                                        
+                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Caccounts/tax_report">Tax Report</a></li>
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Caccounts/invoice_wise_tax_report">Invoice Wise Tax Report</a></li>
+                                     </ul>
+
+                    
+
+            </li>
+                   <!-- Tax menu end -->
+            <!-- human resource management menu start -->
+                         <!-- Supplier menu start -->
+       <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-users"></i><span>Human Resource </span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-users"></i><span>HRM</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    
+            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Chrm/add_designation">Add Designation</a></li>
+                                       <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Chrm/manage_designation">Manage Designation</a></li>
+                                                           <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Chrm/add_employee">Add Employee</a></li>
+                                        
+                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Chrm/manage_employee">Manage Employee</a></li> 
+                           
+                 
+                </ul>
+            </li>
+
+             <!-- ================== Attendance menu start ================= -->
+                                      <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-clock-o"></i><span>Attendance</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                
+               <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cattendance/add_attendance">Add Attendance</a></li>
+                      
+                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cattendance/manage_attendance">Manage Attendance</a></li> 
+                                    
+                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cattendance/attendance_report">Attendance Report</a></li> 
+                                          </ul>
+            </li>
+                             <!-- ====================== Attendance menu end ================== -->
+
+               <!-- ========================== Payroll menu start =================== -->
+                                <!-- Supplier menu start -->
+            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-paypal"></i><span>Payroll</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                  <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/Salarybenificial">
+                        Add Benefits</a></li>                        
+                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/manage_benefits">Manage Benefits</a></li>
+                                             
+                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/salary_setup_form">Add Salary Setup</a></li>
+                                    
+                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/manage_salary_setup">Manage Salary Setup</a></li> 
+                        
+                        
+                       <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/salary_generate_form">Salary Generate</a></li>
+                        
+                                   <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/manage_salary_generate">Manage Salary Generate</a></li>
+                         
+                                             <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cpayroll/salary_payment">Salary Payment</a></li>    
+
+                </ul>
+            </li>
+                       <!-- =============================== Payroll menu end =================== -->
+                <!-- =======================   Expense menu start ========================= -->
+                      <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-credit-card"></i><span>Expense</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cexpense/add_expense_item">Add Expense Item</a></li>
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cexpense/manage_expense_item">Manage Expense Item</a></li>
+                                                        <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cexpense/add_expense">Add Expense</a></li>
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cexpense/manage_expense">Manage Expense</a></li>
+                                                                 <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cexpense/expense_statement_form">Expense Statement</a></li>
+                                  </ul>
+            </li>
+            <!-- ========================== Expense menu end ========================== -->
+
+     <!-- ================= Fixed Assets start ====================== -->
+                   <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="ti-bag"></i> <span>Fixed Assets</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Fixedassets/add_fixedassets">Add Fixed Assets</a></li>
+                                                <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Fixedassets/fixed_assets_list">Fixed Asset List</a></li>
+                                                       <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Fixedassets/fixed_assets_purchase">Purchase Fixed Assets</a></li>
+                                    
+                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Fixedassets/fixed_assets_purchase_list">Fixed Assets Purchase List</a></li>
+                        
+                </ul>
+            </li>
+               
+      <!-- ================= Fixed Assets end  ======================= -->
+      <!-- Personal loan end -->
+             <!--  loan start -->
+                        <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                     <span>Personal Loan</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                        <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/add_person">Add Person</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/add_loan">Add Loan</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/add_payment">Add Payment</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csettings/manage_person">Manage Person</a></li>
+                                    </ul>
+            </li>
+                        <!-- loan end -->
+                                    <!-- Personal loan start -->
+            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                   <i class="fa fa-university" aria-hidden="true"></i>
+
+                    <span>Office Loan</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                  <ul class="treeview-menu">
+                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cloan/add_ofloan_person">Add Person</a></li>
+                                                       <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cloan/add_office_loan">Add Loan</a></li>
+                                                         <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cloan/add_loan_payment">Add Payment</a></li>
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cloan/manage_ofln_person">Manage Person</a></li>
+                                </ul>
+            </li>
+                            </ul>
+            </li>
+
+            
+        
+            <!-- Human Resource management menu end -->
+                    <!-- supplier menu start -->
+                            <li class="treeview  ">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                        <i class="ti-user"></i><span>Supplier</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csupplier">Add Supplier</a></li>
+                        
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csupplier/manage_supplier">Manage Supplier</a></li>
+                        
+                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csupplier/supplier_ledger_report">Supplier Ledger</a></li>
+                        
+               
+
+                    </ul>
+                </li>
+                            <!-- manufacturer menu end -->
+
+             <!-- Purchase menu end -->
+                          <!-- service menu start -->
+            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="fa fa-asl-interpreting"></i><span>Service</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                        <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cservice">Add Service</a></li>
+                                                     <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cservice/manage_service">Manage Service</a></li>
+                                                                    <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cservice/service_invoice_form">Service Invoice</a></li>
+                                                                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cservice/manage_service_invoice">Manage Service Invoice</a></li>
+                                       </ul>
+            </li>
+        
+         <!-- Search menu start            -->
+            <!-- Search menu start -->
+            
+             <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="ti-search"></i><span>Search</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                           <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csearch/medicine">Medicine</a></li>
+                    
+                                        <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csearch/customer">Customer </a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csearch/invoice">Invoice </a></li>
+                        
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csearch/purchase">Purchase </a></li>
+                        
+                </ul>
+             </li>
+                    
+            <!-- Software Settings menu start -->
+            
+                 <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <i class="ti-settings"></i><span>Settings</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                               <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <span>Software Settings</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Company_setup/manage_company">Manage Company</a></li>
+                    
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/User">Add User</a></li>
+                    
+                                          <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/User/manage_user">Manage Users </a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Language">Language </a></li>
+                                                               <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Currency">Currency </a></li>
+                                                               <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cweb_setting">Web Setting </a></li>
+                    
+
+                </ul>
+            </li>
+
+
+                        <!-- Role-permission menu start -->
+            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <span>Role Permission</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Permission/add_role">Add Role</a></li>
+                    
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Permission/role_list">Role List</a></li>
+                    
+
+
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Permission/user_assign">Assign  User Role</a></li>
+                    
+               
+
+
+                </ul>
+            </li>
+            
+
+                        <!-- Sms setting start -->
+                         
+         <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <span>SMS</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                
+                      <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Csms/configure">Sms Configuration</a></li>
+                     
+ 
+                </ul>
+             </li>
+                  
+            <!-- Sms Setting end -->
+
+            <!-- Synchronizer setting start -->
+                            <li class="treeview  ">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">
+                    <span>Data Synchronizer</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                     <ul class="treeview-menu">
+                
+                               <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Backup_restore/restore_form">Restore </a></li>
+                                            <li class="treeview  "><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Backup_restore/import_form">Import</a></li>
+                
+                     <li class="treeview  "><a onclick="if (!window.__cfRLUnblockHandlers) return false; alert(&#39;You Are In Demo Mode&#39;)">Back Up</a></li>
+                </ul>
+            </li>
+                        <!-- Synchronizer setting end -->
+             <li><a href="https://forum.bdtask.com/Pharmacare-software" target="blank"><i class="fa fa-question-circle"></i> Support</a></li>
+                </ul>
+            </li>
+ 
+                        <!-- Software Settings menu end -->
+
+        
+        
+        </ul>
+    </div> <!-- /.sidebar -->
+</aside>            
+<!-- Closing Report Start -->
+<div class="content-wrapper" style="min-height: 1145.5px;">
+    <section class="content-header">
+        <div class="header-icon">
+            <i class="pe-7s-note2"></i>
+        </div>
+        <div class="header-title">
+            <h1>Closing Report</h1>
+            <small>Account Closing Report</small>
+            <ol class="breadcrumb">
+                <li><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#"><i class="pe-7s-home"></i> Home</a></li>
+                <li><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#">Report</a></li>
+                <li class="active">Closing Report</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="content">
+        <!-- Alert Message -->
+        
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body"> 
+                        <form action="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/date_wise_closing_reports/" class="form-inline" method="get" accept-charset="utf-8">
+                                                <label class="select">Search By Date: From</label>
+                        <input type="text" name="from_date" value="2020-09-20" class="datepicker form-control hasDatepicker" id="dp1600569826121">
+                        <label class="select">To</label>
+                        <input type="text" name="to_date" class="datepicker form-control hasDatepicker" value="2020-09-20" id="dp1600569826122">
+                        <button type="submit" class="btn btn-success">Search</button>
+                        <a class="btn btn-warning" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/closing_report#" onclick="if (!window.__cfRLUnblockHandlers) return false; printDiv(&#39;printableArea&#39;)">Print</a>
+                        </form>		            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-bd lobidrag">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Closing Report </h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div id="printableArea">
+                             <table class="print-table" width="100%">
+                                                
+                                                <tbody><tr>
+                                                    <td align="left" class="print-table-tr">
+                                                        <img src="./Closing Report_files/32fc0c4447cb2f53fa40eba88d014882.png" alt="logo">
+                                                    </td>
+                                                    <td align="center" class="print-cominfo">
+                                                        <span class="company-txt">
+                                                            bdtask Shop                                                           
+                                                        </span><br>
+                                                        B-25, Mannan Plaza, 4th Floor, Khilkhet
+Dhaka-1229, Bangladesh                                                         <br>
+                                                        bdtask@gmail.com                                                        <br>
+                                                         1922296392                                                        
+                                                    </td>
+                                                   
+                                                     <td align="right" class="print-table-tr">
+                                                        <date>
+                                                        Date: 20-Sep-2020 
+                                                    </date>
+                                                    </td>
+                                                </tr>            
+                                   
+                                </tbody></table>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover">
+                                    <caption class="text-center"></caption>
+                                    <thead>
+                                        <tr>
+                                            <th>SL.</th>
+                                            <th>Date</th>
+                                          
+                                            <th class="text-right">Cash In</th>
+                                            <th class="text-right">Cash Out</th>
+                                            <th class="text-right">Balance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="text-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Closing Report End -->
+            <footer class="main-footer" id="main-footer">
+    <strong>
+    	CopyrightÃƒâ€šÃ‚Â© 2020 bdtask. All rights reserved.   	</strong><i class="fa fa-heart color-green"></i>
+   	 <input type="hidden" name="csrf_test_name" id="csrf_test_name" value="4e95c965df0ac082110db3acf691595b">
+   	   <input type="hidden" name="base_url" id="base_url" value="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/">
+</footer>
+    <div class="modal fade-scale" id="calculator" role="dialog">
+    <div class="modal-dialog" id="calculatorcontent">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="calcontainer">
+         <div class="screen">
+      <h1 id="mainScreen">0</h1>
+    </div>
+    <table>
+      <tbody><tr>
+        <td><button value="7" id="7" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(7)">7</button></td>
+        <td><button value="8" id="8" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(8)">8</button></td>
+        <td><button value="9" id="9" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(9)">9</button></td>
+        <td><button onclick="if (!window.__cfRLUnblockHandlers) return false; DeleteLastSymbol()">CE</button></td>
+      </tr>
+      <tr>
+        <td><button value="4" id="4" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(4)">4</button></td>
+        <td><button value="5" id="5" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(5)">5</button></td>
+        <td><button value="6" id="6" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(6)">6</button></td>
+        <td><button value="/" id="104" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(104)">/</button></td>
+      </tr>
+      <tr>
+        <td><button value="1" id="1" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(1)">1</button></td>
+        <td><button value="2" id="2" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(2)">2</button></td>
+        <td><button value="3" id="3" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(3)">3</button></td>
+        <td><button value="*" id="103" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(103)">*</button></td>
+      </tr>
+      <tr>
+        <td><button value="0" id="0" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(0)">0</button></td>
+        <td><button value="." id="128" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(128)">.</button></td>
+        <td><button value="-" id="102" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(102)">-</button></td>
+        <td><button value="+" id="101" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(101)">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="if (!window.__cfRLUnblockHandlers) return false; ClearScreen()">C</button></td>
+        <td colspan="1"><button onclick="if (!window.__cfRLUnblockHandlers) return false; CalculateTotal()">=</button></td>
+        <td colspan="1"><button data-dismiss="modal" class="btn-danger"><i class="fa fa-power-off"></i></button></td>
+      </tr>
+    </tbody></table>
+</div>
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- Start Core Plugins-->
+        <!-- jquery-ui --> 
+        
+          <!-- jquery-ui js -->
+
+        <script src="./Closing Report_files/jquery-ui.min.js" type="text/javascript"></script> 
+        <!-- bootstrap js -->
+        <script src="./Closing Report_files/bootstrap.min.js" type="text/javascript"></script>  
+        <!-- pace js -->
+        <script src="./Closing Report_files/pace.min.js" type="text/javascript"></script>  
+        <!-- SlimScroll -->
+        <script src="./Closing Report_files/jquery.slimscroll.min.js" type="text/javascript"></script>  
+        <!-- bootstrap timepicker -->
+     
+        <script src="./Closing Report_files/jquery-ui-timepicker-addon.min.js" type="text/javascript"></script> 
+        <!-- select2 js -->
+        <script src="./Closing Report_files/select2.min.js" type="text/javascript"></script>
+    
+
+
+        <!-- ChartJs JavaScript -->
+        <script src="./Closing Report_files/Chart.min.js" type="text/javascript"></script>
+
+        <!-- DataTables JavaScript -->
+        <script src="./Closing Report_files/dataTables.min.js" type="text/javascript"></script>
+        <!-- Table Head Fixer -->
+        <script src="./Closing Report_files/tableHeadFixer.js" type="text/javascript"></script> 
+        <!-- Admin Script -->
+        <script src="./Closing Report_files/frame.js" type="text/javascript"></script> 
+        <script src="./Closing Report_files/bootstrap-toggle.min.js" type="text/javascript"></script> 
+        <script src="./Closing Report_files/toastr.min.js" type="text/javascript"></script>
+        <script src="./Closing Report_files/sweetalert.min.js" type="text/javascript"></script>
+        <script src="./Closing Report_files/classie.js" type="text/javascript"></script>
+        <script src="./Closing Report_files/modalEffects.js" type="text/javascript"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="./Closing Report_files/custom.js" type="text/javascript"></script>
+        <!-- summernote js -->
+
+ <script src="./Closing Report_files/jstree.min.js" type="text/javascript"></script>
+
+      
+    
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
