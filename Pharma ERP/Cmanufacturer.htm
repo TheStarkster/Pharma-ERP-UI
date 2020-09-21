@@ -1,0 +1,1274 @@
+ <!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Dashboard</title>
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="./Dashboard_files/ba8f3211bb73f7bcc05f7a3b5b91aef6.png" type="image/x-icon">
+        <link rel="apple-touch-icon" type="image/x-icon" href="./assets/dist/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="./assets/dist/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="./assets/dist/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="./assets/dist/img/ico/apple-touch-icon-144-precomposed.png">
+        <!-- Start Global Mandatory Style-->
+
+       <!-- jquery ui css -->
+        <link href="./Dashboard_files/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap --> 
+        <link href="./Dashboard_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+                <!-- Font Awesome 4.7.0 -->
+        <link href="./Dashboard_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+        <!-- sliderAccess css -->
+        <link href="./Dashboard_files/jquery-ui-timepicker-addon.min.css" rel="stylesheet" type="text/css"> 
+        <link href="./Dashboard_files/wickedpicker.min.css" rel="stylesheet" type="text/css">
+        <!-- slider  -->
+        <link href="./Dashboard_files/select2.min.css" rel="stylesheet" type="text/css"> 
+        <!-- DataTables CSS -->
+        <link href="./Dashboard_files/dataTables.min.css" rel="stylesheet" type="text/css"> 
+          <!-- pe-icon-7-stroke -->
+        <link href="./Dashboard_files/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"> 
+        <!-- themify icon css -->
+        <link href="./Dashboard_files/themify-icons.css" rel="stylesheet" type="text/css"> 
+
+      <link href="./Dashboard_files/component.css" rel="stylesheet" type="text/css">
+        <!-- Pace css -->
+        <link href="./Dashboard_files/toastr.css" rel="stylesheet" type="text/css">
+   
+        <link href="./Dashboard_files/bootstrap-toggle.min.css" rel="stylesheet" type="text/css">
+        <!-- Theme style -->
+        <link href="./Dashboard_files/custom.min.css" rel="stylesheet" type="text/css">
+        <link href="./Dashboard_files/style.css" rel="stylesheet" type="text/css">
+        
+        <link href="./Dashboard_files/sweetalert.css" rel="stylesheet" type="text/css">
+        <!-- summernote css -->
+           <link href="./Dashboard_files/styleBD.min.css" rel="stylesheet" type="text/css">
+       
+                <!-- jQuery -->
+       <script src="./Dashboard_files/jquery-3.4.1.min.js" type="text/javascript"></script>
+       <script src="./Dashboard_files/wickedpicker.min.js" type="text/javascript"></script>
+        <script src="./Dashboard_files/jquery.validate.min.js" type="text/javascript"></script>
+    <style></style><script async="" src="./Dashboard_files/adblocker-chromeglobalinjectjs.js"></script></head>
+  
+    <body class="hold-transition sidebar-mini">
+            <div class="page-loader-wrapper">
+            <div class="loader" id="pre-ldr">
+                <div class="preloader">
+                    <div class="spinner-layer pl-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Please wait...</p>
+            </div>
+        </div>
+        <!-- Dashboard.htmENDDashboard.htm Page Loader -->
+        <div class="se-pre-con"></div>
+
+        <!-- Site wrapper -->
+        <div class="wrapper">
+            <!-- Admin header end -->
+            <header class="main-header" id="main-heades">
+                <a href="./Dashboard.htm" class="logo"> <!-- Logo -->
+                    <span class="logo-mini">
+                        
+                        <img src="./Dashboard_files/ba8f3211bb73f7bcc05f7a3b5b91aef6.png" alt="">
+                    </span>
+                    <span class="logo-lg">
+                        
+                        <img src="./Dashboard_files/32fc0c4447cb2f53fa40eba88d014882.png" alt="">
+                    </span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top text-center">
+            
+                    <a href="/Dashboard.htm" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <!-- Sidebar toggle button-->
+                        <span class="sr-only">Toggle Navigation</span>
+            
+                        <span class="pe-7s-keypad"></span>
+                    </a>
+            
+                               <a href="./Cinvoice.htm" class="btn btn-success btn-outline"><i class="fa fa-balance-scale"></i> Invoice</a>
+                     
+                               <a href="./customer_receive.htm" class="btn btn-success btn-outline"><i class="fa fa-money"></i> Customer Receive</a>
+                    
+                              <a href="./manufacturer_payment.htm" class="btn btn-success btn-outline"><i class="fa fa-paypal" aria-hidden="true"></i> Manufacturer Payment</a>
+                    
+                   
+            
+                              <a href="./Cpurchase.htm" class="btn btn-success btn-outline"><i class="ti-shopping-cart"></i> Purchase</a>
+                    
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                               <li class="dropdown notifications-menu">
+                                <a href="./Creport/out_of_date.htm">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="label label-danger">2</span>
+                                </a>
+                            </li>
+                            <li class="dropdown notifications-menu">
+                                <a href="./Creport/out_of_stock.htm">
+                                    <i class="pe-7s-attention" title="Out Of Stock"></i>
+                                    <span class="label label-danger">6</span>
+                                </a>
+                            </li>
+                            <!-- settings -->
+                            <li class="dropdown dropdown-user">
+                                <a href="./Dashboard.htm" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./Admin_dashboard/edit_profile.htm"><i class="pe-7s-users"></i>User Profile</a></li>
+                                    <li><a href="./Admin_dashboard/change_password_form.htm"><i class="pe-7s-settings"></i>Change Password</a></li>
+                                    <li><a href="./Admin_dashboard/logout.htm"><i class="pe-7s-key"></i>Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            
+            <aside class="main-sidebar">
+                <!-- sidebar -->
+                <div class="sidebar" style="height: auto;">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel text-center">
+                        <div class="image">
+                            <img src="./Dashboard_files/profile.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <p>Admin User</p>
+                            <a href="./Dashboard.htm"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- sidebar menu -->
+                    <ul class="sidebar-menu">
+            
+                        <li class="active">
+                            <a href="./Dashboard.htm"><i class="ti-dashboard"></i> <span>Dashboard</span>
+                                <span class="pull-right-container">
+                                    <span class="label label-success pull-right"></span>
+                                </span>
+                            </a>
+                        </li>
+            
+            
+                                        <li class="treeview  ">
+                                <a href="./Dashboard.htm">
+                                    <i class="fa fa-balance-scale"></i><span>Invoice</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                                                <li class="treeview  "><a href="./Cinvoice.htm">New Invoice</a></li>
+                                    
+                                                                <li class="treeview  "><a href="./manage_invoice.htm">Manage Invoice </a></li>
+                                    
+                                                                <li class="treeview  "><a href="./pos_invoice.htm">POS Invoice</a></li>
+                                                                                     <li class="treeview  "><a href="./gui_pos.htm">GUI POS</a></li>
+                                                          </ul>
+                            </li>
+                        
+                        <!-- Invoice menu end -->
+            
+            
+                        <!-- Customer menu start -->
+                                    <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-handshake-o"></i><span>Customer</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                                 <ul class="treeview-menu">
+                                                     <li class="treeview  "><a href="./Ccustomer.htm">Add Customer</a></li>
+                                                                <li class="treeview  "><a href="./manage_customer.htm">Manage Customer</a></li>
+                                                                 <li class="treeview  "><a href="./customer_ledger_report.htm">Customer Ledger</a></li>
+                                                                     <li class="treeview  "><a href="./credit_customer.htm">Credit Customer</a></li>
+                                  
+                                                     <li class="treeview  "><a href="./paid_customer.htm">Paid Customer</a></li>
+                                  
+                                                       <li class="treeview  "><a href="./customer_advance.htm">Customer Advance</a></li>
+                                                  </ul>
+                        </li>
+                                    <!-- Customer menu end -->
+            
+                               <!-- Product menu start -->
+                                        <li class="treeview  ">
+                                <a href="./Dashboard.htm">
+                                    <i class="ti-bag"></i><span>Medicine</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+            
+                                           <!-- Category menu start -->
+            
+                       
+                                                              <li class="treeview  "><a href="./Ccategory.htm">Category</a></li>
+                                                
+                        <!-- Category menu end -->
+                                                             <li class="treeview  "><a href="./typeindex.htm">Medicine Type</a></li>
+                                    
+                                                     <li class="treeview  ">
+                                <a href="./Dashboard.htm">
+                                    <i class="fa fa-universal-access"></i><span>Unit</span>
+                                    <span class="pull-right-container">
+                                        <i class="fa fa-angle-left pull-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                      <li class="treeview  "><a href="./unit_form.htm">Add Unit</a></li>
+            
+                                 <li class="treeview  "><a href="./unit_list.htm">Unit List</a></li>
+                                </ul>
+                            </li>
+                        
+                                                                <li class="treeview  "><a href="./Cproduct.htm">Add Medicine</a></li>
+                                    
+                                                                <li class="treeview  "><a href="./add_product_csv.htm">Import Medicine (CSV)</a></li>
+                                    
+            
+                                                              <li class="treeview  "><a href="./manage_product.htm">Manage Medicine</a></li>
+                                                        </ul>
+                            </li>
+                                    <!-- Product menu end -->
+            
+                        <!-- manufacturer menu start -->
+                                        <li class="treeview  ">
+                                <a href="./Dashboard.htm">
+                                    <i class="ti-user"></i><span>Manufacturer</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                                </a>
+                                     <ul class="treeview-menu">
+                                                     <li class="treeview  "><a href="./Cmanufacturer.htm">Add Manufacturer</a></li>
+                                                                  <li class="treeview  "><a href="./manage_manufacturer.htm">Manage Manufacturer</a></li>
+                                                                        <li class="treeview  "><a href="./manufacturer_ledger_report.htm">Manufacturer Ledger</a></li>
+                                                     
+                                            <li class="treeview  "><a href="./manufacturer_advance.htm">Manufacturer Advance</a></li>
+                                              </ul>
+                            </li>
+                                        <!-- manufacturer menu end -->
+            
+            
+                        <!-- Purchase menu start --> 
+                                     <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="ti-shopping-cart"></i><span>Purchase</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                      <li class="treeview  "><a href="./Cpurchase.htm">Add Purchase</a></li>
+                                
+                                                        <li class="treeview  "><a href="./manage_purchase.htm">Manage Purchase</a></li>
+                                                </ul>
+                         </li>
+                                   <!-- Purchase menu end -->
+                         <!-- stock menu start -->
+                                      <!-- Stock menu start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="ti-bar-chart"></i><span>Stock</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                      <li class="treeview  "><a href="./Creport.htm">Stock Report</a></li>
+                                
+                            
+            
+                                                      <li class="treeview  "><a href="./stock_report_batch_wise.htm">Stock Report(Batch Wise)</a></li>
+                                                </ul>
+                        </li>
+                                   <!-- Stock menu end -->
+                          <!-- start return -->
+                                     <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                               <i class="fa fa-retweet" aria-hidden="true"></i><span>Return</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+            
+                                                      <li class="treeview  "><a href="./Cretrun_m.htm">Return</a></li>
+                                
+                                                        <li class="treeview  "><a href="./return_list.htm">Stock Return List</a></li>
+                                
+                                                        <li class="treeview  "><a href="./manufacturer_return_list.htm">Manufacturer  Return List</a></li>
+                                
+                                                        <li class="treeview  "><a href="./wastage_return_list.htm">Wastage Return List</a></li>
+                                
+                            </ul>
+                          </li>
+                                  
+                        <!-- Report menu start -->
+                                         <!-- Report menu start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="ti-book"></i><span>Report</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                      <li class="treeview  "><a href="./closing.htm">Closing</a></li>
+                                                                    <li class="treeview  "><a href="./closing_report.htm">Closing Report</a></li>
+                                                                          <li class="treeview  "><a href="./all_report.htm">Todays Report</a></li>
+                                
+                                                       <li class="treeview  "><a href="./todays_sales_report.htm">Sales Report</a></li>
+                                
+                                                      <li class="treeview  "><a href="./todays_purchase_report.htm">Purchase Report</a></li>
+                                
+                                                       <li class="treeview  "><a href="./product_sales_reports_date_wise.htm">Sales Report (Medicine Wise)</a></li>
+                                 
+                                                    <li class="treeview  ">
+            
+                                        <a href="./Dashboard.htm"><span>profit/Loss</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                        <ul class="treeview-menu">
+                                            
+                                   <li><a href="./daily_profit.htm">Invoice Wise Report</a></li>
+                                     <li class="treeview  "><a href="./profit_manufacturer_form.htm">Manufacturer Wise</a></li>
+                                <li class="treeview  "><a href="./profit_productwise_form.htm">Medicine Wise</a></li>
+                                        </ul>
+                                    </li>
+                                           
+                            </ul>
+                        </li>
+                                    <!-- Report menu end -->
+                        <!--New Account start-->
+                         <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-money"></i><span>Accounts</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                     <li class="treeview  "><a href="./show_tree.htm">Chart Of Account</a></li>
+                                                                 <li class="treeview  "><a href="./manufacturer_payment.htm">Manufacturer Payment</a></li>
+                                
+                                               <li class="treeview  "><a href="./supplier_payment.htm">Supplier Payment</a></li>
+                                      
+                                                      <li class="treeview  "><a href="./customer_receive.htm">Customer Receive</a></li>
+                                                                          <li class="treeview  "><a href="./cash_adjustment.htm">Cash Adjustment</a></li>
+                                                                         <li class="treeview  "><a href="./debit_voucher.htm">Debit Voucher</a></li>
+                                                                            <li class="treeview  "><a href="./credit_voucher.htm">Credit voucher</a></li>
+                                                     
+                                                         <li class="treeview  "><a href="./contra_voucher.htm">Contra Voucher</a></li>
+                                                                               <li class="treeview  "><a href="./journal_voucher.htm">Journal Voucher</a></li> 
+                                                                              <li class="treeview  "><a href="./aprove_v.htm">Voucher Approval</a></li> 
+                                                                                  <li class="treeview  "><a href="./">Report                            <span class="pull-right-container">
+                                            <i class="fa fa-angle-left pull-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                              
+                                                 <li class="treeview  "><a href="./cash_book.htm">Cash Book</a></li>
+                                                                             <li class="treeview  "><a href="./bank_book.htm">Bank Book</a></li>
+                                                                                          <li class="treeview  "><a href="./general_ledger.htm">General Ledger</a></li>
+                                                                       <li class="treeview  "><a href="./inventory_ledger.htm">Inventory Ledger</a></li>
+                                                                            <li class="treeview  "><a href="./cash_flow_report.htm">Cash Flow</a></li>
+                                 
+                                  <li class="treeview  "><a href="./profit_loss_report.htm">Profit Loss Statement</a></li> 
+                         
+                            
+                                                               <li class="treeview  "><a href="./trial_balance.htm">Trial Balance</a></li>
+                                                              
+                               
+                                                                 <li class="treeview  "><a href="./coa_print.htm">COA Print</a></li>
+                                                        </ul>   
+            
+                        </li>
+                                    </ul>
+                        </li>
+                       <!-- New Account End -->
+            <!-- bank menu start -->
+                        <!-- Bank menu start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm"><i class="ti-briefcase"></i><span>Bank</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                            <ul class="treeview-menu">
+            
+                                                      <li class="treeview  "><a href="./index.htm">Add New Bank</a></li>
+                                
+                                                      <li class="treeview  "><a href="./bank_transaction.htm">Bank Transaction</a></li>
+                                
+                                                        <li class="treeview  "><a href="./bank_list.html">Manage Bank</a></li>
+                                                                             <li class="treeview  "><a href="./bank_ledger.htm">Bank Ledger</a></li>
+                            
+                            </ul>
+                        </li>
+                                    <!-- Bank menu end -->
+                          <!-- Tax menu start -->
+                                                 <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-money"></i><span>Tax</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                
+                            <li class="treeview  "><a href="./tax_settings_updateform.htm">Tax Settings</a></li>
+                                      
+                                             <li class="treeview  "><a href="./add_incometax.htm">Add Income Tax</a></li>
+                                                                <li class="treeview  "><a href="./manage_income_tax.htm">Manage Income tax</a></li>
+                                                    
+                                <li class="treeview  "><a href="./tax_report.htm">Tax Report</a></li>
+                                                                <li class="treeview  "><a href="./invoice_wise_tax_report.htm">Invoice Wise Tax Report</a></li>
+                                                 </ul>
+            
+                                
+            
+                        </li>
+                               <!-- Tax menu end -->
+                        <!-- human resource management menu start -->
+                                     <!-- Supplier menu start -->
+                   <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-users"></i><span>Human Resource </span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-users"></i><span>HRM</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                
+                        <li class="treeview  "><a href="./add_designation.htm">Add Designation</a></li>
+                                                   <li class="treeview  "><a href="./manage_designation.htm">Manage Designation</a></li>
+                                                                       <li class="treeview  "><a href="./add_employee.htm">Add Employee</a></li>
+                                                    
+                                     <li class="treeview  "><a href="./manage_employee.htm">Manage Employee</a></li> 
+                                       
+                             
+                            </ul>
+                        </li>
+            
+                         <!-- ================== Attendance menu start ================= -->
+                                                  <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-clock-o"></i><span>Attendance</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                            
+                           <li class="treeview  "><a href="./add_attendance.htm">Add Attendance</a></li>
+                                  
+                                     <li class="treeview  "><a href="./manage_attendance.htm">Manage Attendance</a></li> 
+                                                
+                                      <li class="treeview  "><a href="./attendance_report.htm">Attendance Report</a></li> 
+                                                      </ul>
+                        </li>
+                                         <!-- ====================== Attendance menu end ================== -->
+            
+                           <!-- ========================== Payroll menu start =================== -->
+                                            <!-- Supplier menu start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-paypal"></i><span>Payroll</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                              <li class="treeview  "><a href="./Salarybenificial.htm">
+                                    Add Benefits</a></li>                        
+                                  <li class="treeview  "><a href="./manage_benefits.htm">Manage Benefits</a></li>
+                                                         
+                                  <li class="treeview  "><a href="./salary_setup_form.htm">Add Salary Setup</a></li>
+                                                
+                                  <li class="treeview  "><a href="./manage_salary_setup.htm">Manage Salary Setup</a></li> 
+                                    
+                                    
+                                   <li class="treeview  "><a href="./salary_generate_form.htm">Salary Generate</a></li>
+                                    
+                                               <li class="treeview  "><a href="./manage_salary_generate.htm">Manage Salary Generate</a></li>
+                                     
+                                                         <li class="treeview  "><a href="./salary_payment.htm">Salary Payment</a></li>    
+            
+                            </ul>
+                        </li>
+                                   <!-- =============================== Payroll menu end =================== -->
+                            <!-- =======================   Expense menu start ========================= -->
+                                  <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-credit-card"></i><span>Expense</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                      <li class="treeview  "><a href="./add_expense_item.htm">Add Expense Item</a></li>
+                                                                <li class="treeview  "><a href="./manage_expense_item.htm">Manage Expense Item</a></li>
+                                                                    <li class="treeview  "><a href="./add_expense.htm">Add Expense</a></li>
+                                                                 <li class="treeview  "><a href="./manage_expense.htm">Manage Expense</a></li>
+                                                                             <li class="treeview  "><a href="./expense_statement_form.htm">Expense Statement</a></li>
+                                              </ul>
+                        </li>
+                        <!-- ========================== Expense menu end ========================== -->
+            
+                 <!-- ================= Fixed Assets start ====================== -->
+                               <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="ti-bag"></i> <span>Fixed Assets</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                      <li class="treeview  "><a href="./add_fixedassets.htm">Add Fixed Assets</a></li>
+                                                            <li class="treeview  "><a href="./fixed_assets_list.htm">Fixed Asset List</a></li>
+                                                                   <li class="treeview  "><a href="./fixed_assets_purchase.htm">Purchase Fixed Assets</a></li>
+                                                
+                                  <li class="treeview  "><a href="./fixed_assets_purchase_list.htm">Fixed Assets Purchase List</a></li>
+                                    
+                            </ul>
+                        </li>
+                           
+                  <!-- ================= Fixed Assets end  ======================= -->
+                  <!-- Personal loan end -->
+                         <!--  loan start -->
+                                    <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                 <span>Personal Loan</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                    <li class="treeview  "><a href="./add_person.htm">Add Person</a></li>
+                                
+                                                        <li class="treeview  "><a href="./add_loan.htm">Add Loan</a></li>
+                                
+                                                        <li class="treeview  "><a href="./add_payment.htm">Add Payment</a></li>
+                                
+                                                        <li class="treeview  "><a href="./manage_person.htm">Manage Person</a></li>
+                                                </ul>
+                        </li>
+                                    <!-- loan end -->
+                                                <!-- Personal loan start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                               <i class="fa fa-university" aria-hidden="true"></i>
+            
+                                <span>Office Loan</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                              <ul class="treeview-menu">
+                                                     <li class="treeview  "><a href="./add_ofloan_person.htm">Add Person</a></li>
+                                                                   <li class="treeview  "><a href="./add_office_loan.htm">Add Loan</a></li>
+                                                                     <li class="treeview  "><a href="./add_loan_payment.htm">Add Payment</a></li>
+                                                                 <li class="treeview  "><a href="./manage_ofln_person.htm">Manage Person</a></li>
+                                            </ul>
+                        </li>
+                                        </ul>
+                        </li>
+            
+                        
+                    
+                        <!-- Human Resource management menu end -->
+                                <!-- supplier menu start -->
+                                        <li class="treeview  ">
+                                <a href="./Dashboard.htm">
+                                    <i class="ti-user"></i><span>Supplier</span>
+                                    <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                                </a>
+                                <ul class="treeview-menu">
+                                                                 <li class="treeview  "><a href="./Csupplier.htm">Add Supplier</a></li>
+                                    
+                                                                <li class="treeview  "><a href="./manage_supplier.htm">Manage Supplier</a></li>
+                                    
+                                                                <li class="treeview  "><a href="./supplier_ledger_report.htm">Supplier Ledger</a></li>
+                                    
+                           
+            
+                                </ul>
+                            </li>
+                                        <!-- manufacturer menu end -->
+            
+                         <!-- Purchase menu end -->
+                                      <!-- service menu start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="fa fa-asl-interpreting"></i><span>Service</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                    <li class="treeview  "><a href="./Cservice.htm">Add Service</a></li>
+                                                                 <li class="treeview  "><a href="./manage_service.htm">Manage Service</a></li>
+                                                                                <li class="treeview  "><a href="./service_invoice_form.htm">Service Invoice</a></li>
+                                                                                  <li class="treeview  "><a href="./manage_service_invoice.htm">Manage Service Invoice</a></li>
+                                                   </ul>
+                        </li>
+                    
+                     <!-- Search menu start            -->
+                        <!-- Search menu start -->
+                        
+                         <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="ti-search"></i><span>Search</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                       <li class="treeview  "><a href="./medicine.htm">Medicine</a></li>
+                                
+                                                    <li class="treeview  "><a href="./customer.htm">Customer </a></li>
+                                
+                                                        <li class="treeview  "><a href="./invoice.htm">Invoice </a></li>
+                                    
+                                                        <li class="treeview  "><a href="./purchase.htm">Purchase </a></li>
+                                    
+                            </ul>
+                         </li>
+                                
+                        <!-- Software Settings menu start -->
+                        
+                             <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <i class="ti-settings"></i><span>Settings</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                           <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <span>Software Settings</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+            
+                                                      <li class="treeview  "><a href="./manage_company.htm">Manage Company</a></li>
+                                
+                                                      <li class="treeview  "><a href="./User.htm">Add User</a></li>
+                                
+                                                      <li class="treeview  "><a href="./manage_user.htm">Manage Users </a></li>
+                                
+                                                        <li class="treeview  "><a href="./Language.htm">Language </a></li>
+                                                                           <li class="treeview  "><a href="./Currency.html">Currency </a></li>
+                                                                           <li class="treeview  "><a href="./Cweb_setting.htm">Web Setting </a></li>
+                                
+            
+                            </ul>
+                        </li>
+            
+            
+                                    <!-- Role-permission menu start -->
+                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <span>Role Permission</span>
+                                <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                                        <li class="treeview  "><a href="./add_role.htm">Add Role</a></li>
+                                
+                                                        <li class="treeview  "><a href="./role_list.htm">Role List</a></li>
+                                
+            
+            
+                                                        <li class="treeview  "><a href="./user_assign.htm">Assign  User Role</a></li>
+                                
+                           
+            
+            
+                            </ul>
+                        </li>
+                        
+            
+                                    <!-- Sms setting start -->
+                                     
+                     <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <span>SMS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                            
+                                  <li class="treeview  "><a href="./configure.htm">Sms Configuration</a></li>
+                                 
+             
+                            </ul>
+                         </li>
+                              
+                        <!-- Sms Setting end -->
+            
+                        <!-- Synchronizer setting start -->
+                                        <li class="treeview  ">
+                            <a href="./Dashboard.htm">
+                                <span>Data Synchronizer</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                                 <ul class="treeview-menu">
+                            
+                                           <li class="treeview  "><a href="./restore_form.htm">Restore </a></li>
+                                                        <li class="treeview  "><a href="./import_form.htm">Import</a></li>
+                            
+                                 <li class="treeview  "><a onclick="if (!window.__cfRLUnblockHandlers) return false; alert(&Dashboard.htm39;You Are In Demo Mode&Dashboard.htm39;)">Back Up</a></li>
+                            </ul>
+                        </li>
+                                    <!-- Synchronizer setting end -->
+                         <li><a href="https://forum.bdtask.com/Pharmacare-software" target="blank"><i class="fa fa-question-circle"></i> Support</a></li>
+                            </ul>
+                        </li>
+             
+                                    <!-- Software Settings menu end -->
+            
+                    
+                    
+                    </ul>
+                </div> <!-- /.sidebar -->
+            </aside>           <!-- Add new manufacturer start -->
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="header-icon">
+            <i class="pe-7s-note2"></i>
+        </div>
+        <div class="header-title">
+            <h1>Add Manufacturer</h1>
+            <small>Add New Manufacturer</small>
+            <ol class="breadcrumb">
+                <li><a href="Dashboard.htm"><i class="pe-7s-home"></i> Home</a></li>
+                <li><a href="Dashboard.htm">Manufacturer</a></li>
+                <li class="active">Add Manufacturer</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="content">
+
+        <!-- Alert Message -->
+        
+        <div class="row">
+            <div class="col-sm-12">
+                
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/manage_manufacturer" class="btn btn-info m-b-5 m-r-2"><i class="ti-align-justify"> </i> Manage Manufacturer </a>
+
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/manufacturer_ledger_report" class="btn btn-primary m-b-5 m-r-2"><i class="ti-align-justify"> </i>  Manufacturer Ledger </a>
+
+                 
+                     <button type="button" class="btn btn-info m-b-5 m-r-2" data-toggle="modal" data-target="Dashboard.htmmanufacturer_modal">CSV Upload Manufacturer</button>
+
+               
+            </div>
+        </div>
+
+        <!-- New manufacturer -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-bd lobidrag">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4>Add Manufacturer </h4>
+                        </div>
+                    </div>
+                    <form action="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/insert_manufacturer" id="insert_manufacturer" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                              <input type="hidden" name="csrf_test_name" value="0f0e4245ccaa8ea528f8a5023a040b30" />
+                    <div class="panel-body">
+                        <div class="col-sm-6">
+
+                        <div class="form-group row">
+                            <label for="manufacturer_name" class="col-sm-4 col-form-label">Manufacturer  Name <i class="text-danger">*</i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name ="manufacturer_name" id="manufacturer_name" type="text" placeholder="Manufacturer  Name"  required="" tabindex="1">
+                            </div>
+                        </div>
+
+                       	<div class="form-group row">
+                            <label for="mobile" class="col-sm-4 col-form-label">Manufacturer  Mobile <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="mobile" id="mobile" type="number" placeholder="Manufacturer  Mobile"  min="0" tabindex="2">
+                            </div>
+                        </div>
+                            <div class="form-group row">
+                            <label for="phone" class="col-sm-4 col-form-label">Phone <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="phone" id="phone" type="number" placeholder="Phone"  min="0" tabindex="2">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label for="email" class="col-sm-4 col-form-label">Email <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="email" id="email" type="email" placeholder="Email"   tabindex="2">
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label for="emailaddress" class="col-sm-4 col-form-label">Email Address <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="emailaddress" id="emailaddress" type="email" placeholder="Email Address"  >
+                            </div>
+                        </div>
+
+                          <div class="form-group row">
+                            <label for="contact" class="col-sm-4 col-form-label">Contact <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="contact" id="contact" type="text" placeholder="Contact"  >
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="fax" class="col-sm-4 col-form-label">Fax <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="fax" id="fax" type="text" placeholder="Fax"  >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="city" class="col-sm-4 col-form-label">City <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="city" id="city" type="text" placeholder="City"  >
+                            </div>
+                        </div>
+                         
+                    </div>
+                    <div class="col-sm-6">
+                    <div class="form-group row">
+                            <label for="state" class="col-sm-4 col-form-label">State <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="state" id="state" type="text" placeholder="State"  >
+                            </div>
+                        </div>
+                      
+                         
+                         <div class="form-group row">
+                            <label for="zip" class="col-sm-4 col-form-label">Zip code <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="zip" id="zip" type="text" placeholder="Zip code"  >
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label for="country" class="col-sm-4 col-form-label">Country <i class="text-danger"></i></label>
+                            <div class="col-sm-8">
+                            
+                                 <select name="country"  class="form-control">
+<option value=" ">Select Country</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Brazil">Brazil</option>
+<option value="Brunei">Brunei</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombi">Colombi</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo (Brazzaville)">Congo (Brazzaville)</option>
+<option value="Congo">Congo</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote d&Dashboard.htm039;Ivoire">Cote d'Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor (Timor Timur)">East Timor (Timor Timur)</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia, The">Gambia, The</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Greece">Greece</option>
+<option value="Grenada">Grenada</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Honduras">Honduras</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Korea, North">Korea, North</option>
+<option value="Korea, South">Korea, South</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia">Micronesia</option>
+<option value="Moldova">Moldova</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Qatar">Qatar</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent">Saint Vincent</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia and Montenegro">Serbia and Montenegro</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Vatican City">Vatican City</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Yemen">Yemen</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="address " class="col-sm-4 col-form-label">Manufacturer  Address</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" name="address" id="address " rows="2" placeholder="Manufacturer  Address" ></textarea>
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <label for="address2 " class="col-sm-4 col-form-label">Address2</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" name="address2" id="address2" rows="2" placeholder="Manufacturer  Address2" ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="details" class="col-sm-4 col-form-label">Manufacturer Details</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" name="details" id="details" rows="2" placeholder="Manufacturer Details" tabindex="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="previous_balance" class="col-sm-4 col-form-label">Previous Balance</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" name="previous_balance" id="previous_balance" type="text" min="0" placeholder="Previous Balance" tabindex="5">
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-4 col-form-label"></label>
+                            <div class="col-sm-6">
+                                <input type="submit" id="add-manufacturer" class="btn btn-primary btn-large" name="add-manufacturer" value="Save" tabindex="6"/>
+                                <input type="submit" value="Save And Add Another" name="add-manufacturer-another" class="btn btn-large btn-success" id="add-manufacturer-another" tabindex="5">
+                            </div>
+                        </div>
+                    </div>
+                    </form>                </div>
+            </div>
+        </div>
+        <div id="manufacturer_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+
+                <div class="panel panel-bd">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h4></h4>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-body">
+                     <div class="col-sm-12"><a href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/data/csv/manufacturer_csv_sample.csv" class="btn btn-primary pull-right"><i class="fa fa-download"></i> Download Sample File</a></div>
+                      <form action="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Cmanufacturer/uploadCsv_manufacturer" class="form-vertical" id="validate" name="insert_manufacturer" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                               <input type="hidden" name="csrf_test_name" value="0f0e4245ccaa8ea528f8a5023a040b30" />
+                            <div class="col-sm-12">
+                                <div class="form-group row">
+                                    <label for="upload_csv_file" class="col-sm-4 col-form-label">Upload CSV File <i class="text-danger">*</i></label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" name="upload_csv_file" type="file" id="upload_csv_file" placeholder="Upload CSV File" required>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                       <div class="col-sm-12">
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-right">
+                                <input type="submit" id="add-product" class="btn btn-primary btn-large" name="add-product" value="Submit" />
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                               
+                            </div>
+                        </div>
+                        </div>
+                          </form>                    </div>
+                    </div>
+                  
+               
+     
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+    </section>
+</div>
+<!-- Add new manufacturer end -->
+
+
+
+
+            <footer class="main-footer" id="main-footer">
+    <strong>
+    	CopyrightÃƒâ€šÃ‚Â© 2020 bdtask. All rights reserved.   	</strong><i class="fa fa-heart color-green"></i>
+   	 <input type ="hidden" name="csrf_test_name" id="csrf_test_name" value="0f0e4245ccaa8ea528f8a5023a040b30">
+   	   <input type ="hidden" name="base_url" id="base_url" value="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/">
+</footer>
+    <div class="modal fade-scale" id="calculator" role="dialog">
+    <div class="modal-dialog" id="calculatorcontent">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="calcontainer">
+         <div class="screen">
+      <h1 id="mainScreen">0</h1>
+    </div>
+    <table>
+      <tr>
+        <td><button value="7" id="7" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(7)" data-cf-modified-1effec14d734270fdfd16a89-="">7</button></td>
+        <td><button value="8" id="8" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(8)" data-cf-modified-1effec14d734270fdfd16a89-="">8</button></td>
+        <td><button value="9" id="9" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(9)" data-cf-modified-1effec14d734270fdfd16a89-="">9</button></td>
+        <td><button onclick="if (!window.__cfRLUnblockHandlers) return false; DeleteLastSymbol()" data-cf-modified-1effec14d734270fdfd16a89-="">CE</button></td>
+      </tr>
+      <tr>
+        <td><button value="4" id="4" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(4)" data-cf-modified-1effec14d734270fdfd16a89-="">4</button></td>
+        <td><button value="5" id="5" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(5)" data-cf-modified-1effec14d734270fdfd16a89-="">5</button></td>
+        <td><button value="6" id="6" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(6)" data-cf-modified-1effec14d734270fdfd16a89-="">6</button></td>
+        <td><button value="/" id="104" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(104)" data-cf-modified-1effec14d734270fdfd16a89-="">/</button></td>
+      </tr>
+      <tr>
+        <td><button value="1" id="1" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(1)" data-cf-modified-1effec14d734270fdfd16a89-="">1</button></td>
+        <td><button value="2" id="2" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(2)" data-cf-modified-1effec14d734270fdfd16a89-="">2</button></td>
+        <td><button value="3" id="3" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(3)" data-cf-modified-1effec14d734270fdfd16a89-="">3</button></td>
+        <td><button value="*" id="103" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(103)" data-cf-modified-1effec14d734270fdfd16a89-="">*</button></td>
+      </tr>
+      <tr>
+        <td><button value="0" id="0" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(0)" data-cf-modified-1effec14d734270fdfd16a89-="">0</button></td>
+        <td><button value="." id="128" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(128)" data-cf-modified-1effec14d734270fdfd16a89-="">.</button></td>
+        <td><button value="-" id="102" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(102)" data-cf-modified-1effec14d734270fdfd16a89-="">-</button></td>
+        <td><button value="+" id="101" onclick="if (!window.__cfRLUnblockHandlers) return false; InputSymbol(101)" data-cf-modified-1effec14d734270fdfd16a89-="">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="if (!window.__cfRLUnblockHandlers) return false; ClearScreen()" data-cf-modified-1effec14d734270fdfd16a89-="">C</button></td>
+        <td colspan="1"><button onclick="if (!window.__cfRLUnblockHandlers) return false; CalculateTotal()" data-cf-modified-1effec14d734270fdfd16a89-="">=</button></td>
+        <td colspan="1"><button  data-dismiss="modal" class="btn-danger"><i class="fa fa-power-off"></i></button></td>
+      </tr>
+    </table>
+</div>
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- Start Core Plugins-->
+        <!-- jquery-ui --> 
+        
+          <!-- jquery-ui js -->
+
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery-ui.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script> 
+        <!-- bootstrap js -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/bootstrap.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>  
+        <!-- pace js -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/pace.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>  
+        <!-- SlimScroll -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery.slimscroll.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>  
+        <!-- bootstrap timepicker -->
+     
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery-ui-timepicker-addon.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script> 
+        <!-- select2 js -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/select2.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+    
+
+
+        <!-- ChartJs JavaScript -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/Chart.min.js?v=2.5" type="1effec14d734270fdfd16a89-text/javascript"></script>
+
+        <!-- DataTables JavaScript -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/datatables/dataTables.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+        <!-- Table Head Fixer -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/tableHeadFixer.js" type="1effec14d734270fdfd16a89-text/javascript"></script> 
+        <!-- Admin Script -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/frame.js" type="1effec14d734270fdfd16a89-text/javascript"></script> 
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/bootstrap-toggle.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script> 
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/toastr/toastr.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/sweetalert/sweetalert.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/modals/classie.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/modals/modalEffects.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/custom.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+        <!-- summernote js -->
+
+ <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jstree.min.js" type="1effec14d734270fdfd16a89-text/javascript"></script>
+
+      
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="1effec14d734270fdfd16a89-|49" defer=""></script></body>
+</html>
