@@ -1,0 +1,239 @@
+ <!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Admin Login Area</title>
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="http://softest8.bdtask.com/pharmacysasmodel/my-assets/image/logo/ba8f3211bb73f7bcc05f7a3b5b91aef6.png" type="image/x-icon">
+        <link rel="apple-touch-icon" type="image/x-icon" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/dist/img/ico/apple-touch-icon-144-precomposed.png">
+        <!-- Start Global Mandatory Style-->
+
+       <!-- jquery ui css -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Bootstrap --> 
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                <!-- Font Awesome 4.7.0 -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  
+        <!-- sliderAccess css -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/jquery-ui-timepicker-addon.min.css" rel="stylesheet" type="text/css"/> 
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/wickedpicker.min.css" rel="stylesheet" type="text/css"/>
+        <!-- slider  -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/select2.min.css" rel="stylesheet" type="text/css"/> 
+        <!-- DataTables CSS -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/datatables/dataTables.min.css" rel="stylesheet" type="text/css"/> 
+          <!-- pe-icon-7-stroke -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/> 
+        <!-- themify icon css -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/themify-icons.css" rel="stylesheet" type="text/css"/> 
+
+      <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/modals/component.css" rel="stylesheet" type="text/css"/>
+        <!-- Pace css -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/toastr/toastr.css" rel=stylesheet type="text/css"/>
+   
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/bootstrap-toggle.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Theme style -->
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/style.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
+        <!-- summernote css -->
+           <link href="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/css/styleBD.min.css" rel="stylesheet" type="text/css"/>
+       
+                <!-- jQuery -->
+       <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery-3.4.1.min.js?v=3.4.1" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+       <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/wickedpicker.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery.validate.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+    </head>
+    <body class="hold-transition sidebar-mini">
+            <div class="page-loader-wrapper">
+            <div class="loader" id="pre-ldr">
+                <div class="preloader">
+                    <div class="spinner-layer pl-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Please wait...</p>
+            </div>
+        </div>
+        <!-- Dashboard.htmENDDashboard.htm Page Loader -->
+        <div class="se-pre-con"></div>
+
+        <!-- Site wrapper -->
+        <div class="wrapper">
+                        <script src='https://www.google.com/recaptcha/api.js' type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+<!-- Admin login area start-->
+<div class="container-center">
+    <!-- Alert Message -->
+        <div class="panel panel-bd">
+        <div class="panel-heading">
+            <div class="view-header">
+                <div class="header-icon">
+                    <i class="pe-7s-unlock"></i>
+                </div>
+                <div class="header-title">
+                    <h3>Login</h3>
+                    <small><strong>Please enter your login information.</strong></small>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <form action="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/do_login" id="login" method="post" accept-charset="utf-8">
+                      <input type="hidden" name="csrf_test_name" value="0f0e4245ccaa8ea528f8a5023a040b30" />
+            <div class="form-group">
+                <label class="control-label" for="username">Email</label>
+                <input type="email" placeholder="Email" title="Email" required="" value="" name="username" id="username" class="form-control">
+                <span class="help-block small">Your unique email</span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="password">Password</label>
+                <input type="password" title="Please enter your password" placeholder="Password" required="" value="" name="password" id="password" class="form-control">
+                <span>Your strong password <a href="Dashboard.htm"  data-toggle="modal" data-target="Dashboard.htmpasswordrecoverymodal"><b class="text-right"></b></a></span>
+            </div>
+
+            
+            <div>
+                <button class="btn btn-success">Login</button>
+            </div>
+            </form>        </div>
+         <div class="panel-footer">
+            <table style="cursor:pointer;font-size:14px" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Password</th> 
+                        <th>Role</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-role="1">
+                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="254441484c4b654248444c490b464a48">[email&Dashboard.htm160;protected]</a></td>
+                        <td>123456</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr data-role="2">
+                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff95979091bf9a929e9693d19c9092">[email&Dashboard.htm160;protected]</a></td>
+                        <td>123456</td> 
+                        <td>Manager</td>
+                    </tr>
+                     <tr data-role="2">
+                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d47585e5944436d48404c4441034e4240">[email&Dashboard.htm160;protected]</a></td>
+                        <td>123456</td> 
+                        <td>Sales Stuff</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+    <input type="hidden" id="base_url" value="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/" name="">
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="passwordrecoverymodal" tabindex="-1" role="dialog" aria-labelledby="recoverylabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recoverylabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div id="outputPreview" class="alert hide modal-title" role="alert" >
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+      </div>
+      <div class="modal-body">
+           <form action="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/Admin_dashboard/login" id="passrecoveryform" method="post" accept-charset="utf-8">
+                                                                                                             <input type="hidden" name="csrf_test_name" value="0f0e4245ccaa8ea528f8a5023a040b30" />
+                      <div class="form-group row">
+                            <label for="email" class="col-sm-3 col-form-label">Email <i class="text-danger">*</i></label>
+                            <div class="col-sm-6">
+                                <input class="form-control" name ="rec_email" id="email" type="text" placeholder="Email"  required="">
+                            </div>
+                        </div>
+                        
+                        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" id="submit" class="btn btn-success" value="Send">
+      </div>
+       </form>    </div>
+  </div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="a9ae21dde83f8da23a1b7ff4-text/javascript">
+    $(document).ready(function() {
+        var info = $('table tbody tr');
+        info.click(function() {
+            var email    = $(this).children().first().text(); 
+            var password = $(this).children().first().next().text();
+            var user_role = $(this).attr('data-role');  
+
+            $("input[type=email]").val(email);
+            $("input[type=password]").val(password);
+            $('select option[value='+user_role+']').attr("selected", "selected"); 
+        });
+    });
+</script>
+
+
+
+                    </div>
+        <!-- ./wrapper -->
+
+        <!-- Start Core Plugins-->
+        <!-- jquery-ui --> 
+        
+          <!-- jquery-ui js -->
+
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery-ui.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script> 
+        <!-- bootstrap js -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/bootstrap.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>  
+        <!-- pace js -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/pace.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>  
+        <!-- SlimScroll -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery.slimscroll.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>  
+        <!-- bootstrap timepicker -->
+     
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jquery-ui-timepicker-addon.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script> 
+        <!-- select2 js -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/select2.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+    
+
+
+        <!-- ChartJs JavaScript -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/Chart.min.js?v=2.5" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+
+        <!-- DataTables JavaScript -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/datatables/dataTables.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <!-- Table Head Fixer -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/tableHeadFixer.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script> 
+        <!-- Admin Script -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/frame.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script> 
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/bootstrap-toggle.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script> 
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/toastr/toastr.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/sweetalert/sweetalert.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/modals/classie.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/plugins/modals/modalEffects.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/custom.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+        <!-- summernote js -->
+
+ <script src="https://pharmacyv5.bdtask.com/pharmacare-9.3_demo/assets/js/jstree.min.js" type="a9ae21dde83f8da23a1b7ff4-text/javascript"></script>
+
+      
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="a9ae21dde83f8da23a1b7ff4-|49" defer=""></script></body>
+</html>
